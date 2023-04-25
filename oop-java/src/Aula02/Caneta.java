@@ -1,31 +1,39 @@
 package Aula02;
 
 public class Caneta {
-	String modelo;
-	String cor;
-	float ponta;
-	int carga;
-	boolean tampada;
+	String model;
+	String color;
+	float tip;
+	int charge;
+	boolean capped;
 	
 	void status() {
-		System.out.println("Uma caneta " + this.cor);
-		System.out.println("está tampada? " + this.tampada);
-		System.out.println("ponta " + this.ponta);
-		System.out.println("carga " + this.carga);
+		System.out.println("One Pen " + this.color);
+		System.out.println("is it covered? " + this.capped);
+		System.out.println("tip " + this.tip);
+		System.out.println("charge " + this.charge);
 	}
 	
-	void rabiscar() {
-		if(this.tampada ==true) {
-			System.out.println("Erro: Não é possível rabiscar");
+	void write() {
+		if(this.capped ==true) {
+			System.out.println("Error: Its not possible write");
 		} else {
-			System.out.println("Rabiscando...");
+			System.out.println("Scratch...");
 		}
 	}
 	
-	void tampar() {
-		this.tampada = true;
+	void scrawl() {
+		if(this.capped ==true) {
+			System.out.println("Error: Its not possible scribble");
+		} else {
+			System.out.println("Scratch...");
+		}
 	}
-	void destampar() {
-			this.tampada = false;
+	
+	void cap() {
+		this.capped = true;
+	}
+	void uncap() {
+			this.capped = false;
 		}
 }
