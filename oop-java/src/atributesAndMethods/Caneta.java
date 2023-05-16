@@ -1,4 +1,4 @@
-package AtributesAndMethods;
+package atributesAndMethods;
 
 public class Caneta {
 	public String model;

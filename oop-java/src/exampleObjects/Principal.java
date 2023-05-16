@@ -1,4 +1,4 @@
-package ExampleObjects;
+package exampleObjects;
 
 public class Principal {
 
